@@ -52,6 +52,7 @@
     <Compile Include="FrmOperacionesBasicas.Designer.cs">
       <DependentUpon>FrmOperacionesBasicas.cs</DependentUpon>
     </Compile>
+    <Compile Include="OperacionBasica.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmOperacionesBasicas.resx">

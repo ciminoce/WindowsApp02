@@ -29,6 +29,7 @@ namespace WindowsApp02
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.Numero1TextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,6 +41,8 @@ namespace WindowsApp02
             this.SalirButton = new System.Windows.Forms.Button();
             this.CancelarButton = new System.Windows.Forms.Button();
             this.ResultadosListBox = new System.Windows.Forms.ListBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -149,6 +152,10 @@ namespace WindowsApp02
             this.ResultadosListBox.Size = new System.Drawing.Size(230, 121);
             this.ResultadosListBox.TabIndex = 5;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FrmOperacionesBasicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +176,7 @@ namespace WindowsApp02
             this.Name = "FrmOperacionesBasicas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Operaciones Básicas";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,6 +195,7 @@ namespace WindowsApp02
         private System.Windows.Forms.Button CancelarButton;
         private System.Windows.Forms.Button SalirButton;
         private System.Windows.Forms.ListBox ResultadosListBox;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
